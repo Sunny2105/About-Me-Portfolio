@@ -2182,6 +2182,194 @@ pointer-events:none;
 
 }
 
+/*=============================
+        HERO PHOTO
+=============================*/
+
+.hero-image{
+
+width:360px;
+
+height:360px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+margin:auto;
+
+border:6px solid rgba(139,92,246,.5);
+
+box-shadow:
+0 0 30px rgba(139,92,246,.35),
+0 0 70px rgba(56,189,248,.20);
+
+animation:floatPhoto 4s ease-in-out infinite;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+height:130%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.4s;
+
+}
+
+.hero-image:hover img{
+
+transform:scale(1.05);
+
+}
+
+@keyframes floatPhoto{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+
+/*=============================
+      OPEN TO INTERNSHIP
+=============================*/
+
+.internship-badge{
+
+margin-top:20px;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 22px;
+
+background:rgba(16,185,129,.12);
+
+border:1px solid rgba(16,185,129,.5);
+
+border-radius:30px;
+
+color:#22c55e;
+
+font-size:15px;
+
+font-weight:600;
+
+backdrop-filter:blur(10px);
+
+}
+
+.internship-badge .dot{
+
+width:10px;
+
+height:10px;
+
+background:#22c55e;
+
+border-radius:50%;
+
+box-shadow:0 0 10px #22c55e;
+
+animation:pulseDot 1.5s infinite;
+
+}
+
+@keyframes pulseDot{
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+50%{
+
+transform:scale(1.5);
+
+opacity:.6;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/*=============================
+        NAVBAR PROFILE
+=============================*/
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+text-decoration:none;
+
+}
+
+.logo img{
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+object-position:center top;
+
+object-fit:cover;
+
+border:2px solid #8b5cf6;
+
+box-shadow:0 0 12px rgba(139,92,246,.4);
+
+transition:.3s;
+
+}
+
+.logo img:hover{
+
+transform:scale(1.08);
+
+}
+
+
 /*=========================================
         END OF STYLE.CSS
 =========================================*/
