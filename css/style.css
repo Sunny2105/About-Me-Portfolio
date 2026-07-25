@@ -2370,6 +2370,23 @@ transform:scale(1.08);
 }
 
 
+.certificate-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.certificate-card{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover{
+    transform: translateY(-5px);
+}
+
+
+
 /*=========================================
         END OF STYLE.CSS
 =========================================*/
