@@ -3179,6 +3179,182 @@ footer p {
 }
 
 
+
+
+
+
+
+
+/*=========================================
+        CODING PROFILES
+=========================================*/
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:25px;
+
+    align-items:stretch;
+
+}
+
+.profile-card{
+
+    min-height:300px;
+
+    padding:35px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    transition:.35s;
+
+    backdrop-filter:blur(18px);
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--blue);
+
+    box-shadow:
+    0 0 15px rgba(139,92,246,.25),
+    0 0 35px rgba(56,189,248,.15);
+
+}
+
+.profile-card i{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:40px;
+
+    color:var(--blue);
+
+    background:rgba(56,189,248,.08);
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+}
+
+.profile-card h3{
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+.profile-card h2{
+
+    font-size:40px;
+
+    color:var(--purple);
+
+    margin:8px 0;
+
+}
+
+.profile-card p{
+
+    color:var(--text);
+
+    margin-bottom:20px;
+
+}
+
+.profile-card a{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:linear-gradient(
+        90deg,
+        var(--purple),
+        var(--blue)
+    );
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.profile-card a:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/*=========================================
+        PROFILE RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+    .profile-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-card{
+
+        min-height:280px;
+
+        padding:30px 20px;
+
+    }
+
+}
+
+
+
 /*=========================================
         END OF STYLE.CSS
 =========================================*/
